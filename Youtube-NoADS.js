@@ -2,7 +2,7 @@
 // @name               Youtube Ads Remover
 // @namespace          Dheeruthedeployer
 // @version            1.0.3
-// @description        Automaticly Skips all youtube ads! with no waiting time.
+// @description        Automatically Skips all youtube ads! with no waiting time.
 // @author             Dheeraj kumar Gupta
 // @match              *://www.youtube.com/*
 // ==/UserScript==
