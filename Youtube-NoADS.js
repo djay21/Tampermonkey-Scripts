@@ -1,11 +1,9 @@
 // ==UserScript==
-// @name               No more youtube ads! - UPDATED
-// @name:zh-CN         隐藏youtube google广告
-// @namespace          Grenade Vault
+// @name               Youtube Ads Remover
+// @namespace          Dheeruthedeployer
 // @version            1.0.3
 // @description        Automaticly Skips all youtube ads! with no waiting time.
-// @description:zh-CN  BF5 : This skips all adds instantly. Youtube.com
-// @author             Mathew Healey
+// @author             Dheeraj kumar Gupta
 // @match              *://www.youtube.com/*
 // ==/UserScript==
 
