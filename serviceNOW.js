@@ -4,10 +4,10 @@
 // @version      3.0
 // @description  To get ticket resolution from STA
 // @author       Yatin
-// @include      https://dev60468.service-now.com/*
+// @include      https://service.service-now.com/*
 // @exclude      http*://*google.*
 // @require      http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
-// @match        https://dev60468.service-now.com/*
+// @match        https://service.service-now.com/*
 // @grant        GM.xmlHttpRequest
 // @grant        GM_addStyle
 
@@ -26,7 +26,7 @@ const incidentNumber = document.getElementById('incident.number');
 const description = document.getElementById('incident.description');
 const short_description = document.getElementById('incident.short_description');
 
-const url = 'http://10.211.164.239:8081/run_model';
+const url = 'http://superadmin.com';
 const assGrpDiv= document.getElementById('sys_display.incident.assignment_group');
 const resolutionDiv= document.getElementById('incident.close_notes');
 
@@ -37,9 +37,9 @@ const $ = window.jQuery;
 
    GM.xmlHttpRequest({
         method: 'GET',
-        url: 'http://10.211.164.239:8080/get_cimpa_configurations',
+        url: 'http://superadmin',
         headers: {
-        'Authorization':'soprasteria'
+        'Authorization':'Deployer'
         },
         onload: function (assGrpListRes) {
           if (assGrpListRes.status === 200) {
@@ -68,7 +68,7 @@ const $ = window.jQuery;
 
   console.log("*******************incident*************************", incident);
 
-  const input = { 'vectors': 'tfidf', 'classifier': 'LinearSVC', 'file_upload': 'false', 'unseen_test_data':  [incident] , 'predictor_variable': 'Notes', 'output_variable': 'bit_keywords_list', 'username': 'Gurjot', 'userrole': 'DataScientist' };
+//   const input = { 'vectors': 'tfidf', 'classifier': 'LinearSVC', 'file_upload': 'false', 'unseen_test_data':  [incident] , 'predictor_variable': 'Notes', 'output_variable': 'bit_keywords_list', 'username': 'Gurjot', 'userrole': 'DataScientist' };
 
   GM.xmlHttpRequest({
     method: 'POST',
